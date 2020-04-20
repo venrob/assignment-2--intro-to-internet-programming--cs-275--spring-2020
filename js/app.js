@@ -1,4 +1,3 @@
-const max_rice_oz = 100000;
 let tabhandles, recipes, riceOZ;
 let chosen_recipe = -1;
 let originalRecipes = null;
@@ -14,7 +13,7 @@ window.onload = () => {
         chooseRecipe(1);
     });
     riceOZ.addEventListener(`input`, () => {
-        riceOZ.value = Math.min(max_rice_oz,Math.max(0,parseFloat(riceOZ.value)));
+        riceOZ.value = Math.min(riceOZ.max,Math.max(riceOZ.min,parseFloat(riceOZ.value)));
         if(invalidValue(riceOZ.value)) //Don't update if bad value
             return;
         updateRice();
