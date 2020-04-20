@@ -14,9 +14,9 @@ window.onload = () => {
         chooseRecipe(1);
     });
     riceOZ.addEventListener(`input`, () => {
+        riceOZ.value = Math.min(max_rice_oz,Math.max(0,parseFloat(riceOZ.value)));
         if(invalidValue(riceOZ.value)) //Don't update if bad value
             return;
-        riceOZ.value = Math.min(max_rice_oz,parseFloat(riceOZ.value));
         updateRice();
     });
     chooseRecipe(0); //Set the default recipe to the leftmost tab
