@@ -4,11 +4,35 @@
   color: rgba(0, 0, 0, 1);
 }
 
+body {
+  margin: 0 8px;
+  line-height: 1.2;
+}
+
+strong {
+  font-weight: 600;
+}
+
 div,
 p,
 h1 {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
+}
+
+p {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+li {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 10px 0;
+  padding: 0 0 0 40px;
 }
 
 h1 {
@@ -19,6 +43,21 @@ h1 {
   width: 20%;
   left: 35%;
   position: relative;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+div {
+  margin: 8px 0;
 }
 
 h1,
@@ -28,6 +67,7 @@ h4,
 h5,
 h6 {
   font-family: serif;
+  font-weight: 600;
 }
 
 #tab_container {
@@ -47,7 +87,7 @@ h6 {
   /*background: linear-gradient(150deg, hsl(221,82%,75%) 0%,hsl(221,82%,80%) 34%,hsl(221,82%,70%) 69%,hsl(221,82%,65%) 100%);*/
   background-color: rgb(100%, 100%, 100%);
   color: rgb(0, 0, 0);
-  font-weight: 200;
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -76,5 +116,5 @@ h6 {
 }
 
 #riceOZ {
-  font-size: 14px;
+  font-size: 18px;
 }
