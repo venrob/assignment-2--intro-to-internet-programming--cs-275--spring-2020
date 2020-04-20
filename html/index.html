@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rice Recipes</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rice Recipe</h1>
+    </header>
+    <main>
+      <div id="tab_container">
+        <p>White Rice</p>
+        <p>Sprouted California Rice</p>
+      </div>
+      <div id="RecipeBox">
+        <p class="inputLabel">Enter how many ounces of rice you would like to cook:</p>
+        <input type=number id="riceOZ" value=10 max="9999">
+        <div id="White_Rice" class="Recipe">
+          <h2>Making White Rice:</h2>
+          <p>
+            Combine <strong>${r} oz</strong> of rice with <strong>${r*2} oz</strong> of water and <strong>${r/10} Tbsp (${r/20} oz)</strong> olive oil. Bring to a boil, then reduce heat to the lowest setting. Cook for about <strong>18 minutes</strong>.
+          </p>
+          <h3>Ingredients:</h3>
+          <ul>
+            <li>${r} oz rice</li>
+            <li>${r*2} oz water</li>
+            <li>${r/10} Tbsp (${r/20} oz) olive oil</li>
+          </ul>
+        </div>
+        <div id="Sprouted_Rice" class="Recipe" hidden>
+          <h2>Making Sprouted California Rice:</h2>
+          <h3>For slightly al dente rice:</h3>
+          <p>
+            Combine <strong>${r} oz</strong> of rice with <strong>${r/5*8} oz</strong> of water or broth and <strong>${r/10} Tbsp (${r/20} oz)</strong> olive oil. Bring to a boil and stir once to mix. Reduce heat to low, cover with a tight-fitting lid and cook for <strong>25 minutes</strong>. Remove from heat and let stand for 5 minutes. Fluff with a fork and serve.
+          </p>
+          <h3>For softer rice:</h3>
+          <p>
+            Increase liquid by <strong>${r/5} oz</strong> and cook time by <strong>5 minutes</strong>.
+          </p>
+          <h3>Ingredients:</h3>
+          <ul>
+            <li>${r} oz rice</li>
+            <li>${r/5*8} oz water (+${r/5} oz for softer rice)</li>
+            <li>${r/10} Tbsp (${r/20} oz) olive oil</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
